@@ -29,8 +29,7 @@ gem 'opal-webpack-compile-server', '0.1.7', require: false
 
 # need the pinata branch
 gem 'hyper-component', github: 'janbiedermann/hyper-component', branch: 'pinata'
-gem 'hyper-mesh', path: '../hyperloop-repos/hyper-mesh'
-# gem 'hyper-mesh', github: 'janbiedermann/hyper-mesh', branch: 'pinata'
+gem 'hyper-mesh', github: 'janbiedermann/hyper-mesh', branch: 'pinata'
 gem 'hyper-model', github: 'janbiedermann/hyper-model', branch: 'pinata'
 gem 'hyper-operation', github: 'janbiedermann/hyper-operation', branch: 'pinata'
 gem 'hyper-react', github: 'janbiedermann/hyper-react', branch: 'pinata'

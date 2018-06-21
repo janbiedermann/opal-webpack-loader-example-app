@@ -2,8 +2,8 @@
   "name": "webpal",
   "private": true,
   "engines": {
-    "node": "10.4.0",
-    "yarn": "1.7.0"
+    "node": "^10.4.0",
+    "yarn": "^1.7.0"
   },
   "dependencies": {
     "history": "^4.7.2",
