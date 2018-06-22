@@ -26,7 +26,7 @@ class App < Hyperloop::Router
       Route('/app', mounts: Busy)
       Route('/lazy', mounts: HyperLazy) # mount the wrapped lazy loading component
       # Routes for cordova app starting
-      if `Cordova == true`
+      if `typeof Cordova !== 'undefined' && Cordova == true`
         Route('',  exact: true, mounts: Busy)
         Route('/index.html',  exact: true, mounts: Busy)
       end
