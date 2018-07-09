@@ -10,6 +10,16 @@ GIT
       react-rails (>= 2.4.0, < 2.5.0)
 
 GIT
+  remote: https://github.com/janbiedermann/hyper-mesh.git
+  revision: 7e5cfb908a0cba6fe776ee3ed4e392c3fb804aeb
+  branch: pinata
+  specs:
+    hyper-mesh (1.0.0.lap28)
+      activerecord (>= 4.0.0)
+      hyper-component (= 1.0.0.lap28)
+      hyper-operation (= 1.0.0.lap28)
+
+GIT
   remote: https://github.com/janbiedermann/hyper-model.git
   revision: b1d1f96022aaa6084f7413dc201999fe5fabf817
   branch: pinata
@@ -31,7 +41,7 @@ GIT
 
 GIT
   remote: https://github.com/janbiedermann/hyper-react.git
-  revision: 5883fc0ccc706a2c328c430115ef4f29b9e103a4
+  revision: 795fb8db8df3331f69b38c2e0663be9f58deb53d
   branch: pinata
   specs:
     hyper-react (1.0.0.lap28)
@@ -86,7 +96,7 @@ GIT
 
 GIT
   remote: https://github.com/janbiedermann/opal.git
-  revision: fd9cf26a65cd53b30dce5eac87f7adfe672cc880
+  revision: 9b58d671dd4c5140df3e7a8dc12aee9c0d61bcf5
   branch: es6_import_export
   specs:
     opal (0.11.1.dev)
@@ -94,14 +104,6 @@ GIT
       hike (~> 1.2)
       parser (= 2.5.1.0)
       sourcemap (~> 0.1.0)
-
-PATH
-  remote: ../hyperloop-repos/hyper-mesh
-  specs:
-    hyper-mesh (1.0.0.lap28)
-      activerecord (>= 4.0.0)
-      hyper-component (= 1.0.0.lap28)
-      hyper-operation (= 1.0.0.lap28)
 
 GEM
   remote: https://rubygems.org/
@@ -165,7 +167,7 @@ GEM
     c_lexer (2.5.1.0.pre2)
       ast (~> 2.4.0)
       parser (= 2.5.1.0)
-    capybara (3.2.1)
+    capybara (3.3.1)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -193,7 +195,7 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
-    libv8 (6.3.292.48.1)
+    libv8 (6.7.288.46.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -217,15 +219,15 @@ GEM
     mutations (0.8.2)
       activesupport
     nio4r (2.3.1)
-    nokogiri (1.8.2)
+    nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
-    oj (3.6.2)
+    oj (3.6.3)
     opal-activesupport (0.3.1)
       opal (>= 0.5.0, < 1.0.0)
     opal-browser (0.2.0)
       opal
       paggio
-    opal-webpack-compile-server (0.1.7)
+    opal-webpack-compile-server (0.1.9)
       eventmachine (~> 1.2.7)
       oj (~> 3.6.0)
       opal (>= 0.11.0)
@@ -273,11 +275,11 @@ GEM
       tilt
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
-    selenium-webdriver (3.12.0)
+    selenium-webdriver (3.13.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
     sourcemap (0.1.1)
-    sprockets (3.7.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
@@ -290,7 +292,7 @@ GEM
     tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.11)
+    uglifier (4.1.14)
       execjs (>= 0.3.0, < 3)
     web-console (3.6.2)
       actionview (>= 5.0)
@@ -324,7 +326,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   opal!
-  opal-webpack-compile-server (= 0.1.7)
+  opal-webpack-compile-server (= 0.1.9)
   puma (~> 3.11)
   rails (~> 5.2.0)
   selenium-webdriver

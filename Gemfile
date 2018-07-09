@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'c_lexer' # accelerate opal compiler
 gem 'opal', github: 'janbiedermann/opal', branch: 'es6_import_export' # need this branch
 # and this, its started by the yarn run commands and serves opal-webpack-loader by compiling ruby files for it
-gem 'opal-webpack-compile-server', '0.1.8', require: false
+gem 'opal-webpack-compile-server', '0.1.9', require: false
 
 # need the pinata branch
 gem 'hyper-component', github: 'janbiedermann/hyper-component', branch: 'pinata'
