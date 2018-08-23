@@ -114,7 +114,7 @@ module.exports = {
     },
     // configuration for webpack serve
     serve: {
-        dev: {
+        devMiddleware: {
             publicPath: '/packs/',
             headers: {
                 'Access-Control-Allow-Origin': '*'
@@ -123,22 +123,22 @@ module.exports = {
 
             }
         },
-        hot: {
+        hotClient: {
             host: 'localhost',
-            port: '8081',
-            allEntries: true, // this doesn't seem to work
+            port: 8081,
+            allEntries: true,
             hmr: true
         },
         host: "localhost",
         port: 3035,
+        logLevel: 'debug',
         content: path.resolve(__dirname, '../../public/packs'),
-        clipboard: false, // dont copy url to clipboard
-        open: false, // dont open browser
+        clipboard: false,
+        open: false,
         on: {
-            // this configuration is for hot reloading app/views
             "listening": function (server) {
                 const socket = new WebSocket('ws://localhost:8081');
-                const watchPath = path.resolve(__dirname, '../../app/views'); // adjust path here if needed
+                const watchPath = path.resolve(__dirname, '../../app/views');
                 const options = {};
                 const watcher = chokidar.watch(watchPath, options);
 
