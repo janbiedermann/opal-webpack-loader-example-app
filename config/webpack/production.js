@@ -1,5 +1,5 @@
 const path = require('path');
-const OpalWebpackResolverPlugin = require('opal-webpack-resolver-plugin');
+const OwlResolver = require('opal-webpack-loader/resolver');
 const CompressionPlugin = require("compression-webpack-plugin"); // for gzipping the packs
 const  ManifestPlugin = require('webpack-manifest-plugin');  // for generating the manifest
 
@@ -30,7 +30,7 @@ module.exports = {
     resolve: {
         plugins: [
             // resolve ruby files
-            new OpalWebpackResolverPlugin('resolve', 'resolved')
+            new OwlResolver('resolve', 'resolved')
         ]
     },
     module: {

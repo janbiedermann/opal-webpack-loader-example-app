@@ -2,9 +2,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const chokidar = require('chokidar'); // for watching app/view
-const stringify = require('json-stringify-safe');
 const WebSocket = require('ws');
-const OpalWebpackResolverPlugin = require('opal-webpack-resolver-plugin'); // to resolve ruby files
+const OwlResolver = require('opal-webpack-loader/resolver'); // to resolve ruby files
 
 module.exports = {
     parallelism: 8,
@@ -36,7 +35,7 @@ module.exports = {
     resolve: {
         plugins: [
             // this makes it possible for webpack to find ruby files
-            new OpalWebpackResolverPlugin('resolve', 'resolved')
+            new OwlResolver('resolve', 'resolved')
         ]
     },
     plugins: [
@@ -151,7 +150,7 @@ module.exports = {
                         },
                     };
 
-                    socket.send(stringify(data));
+                    socket.send(JSON.stringify(data));
                 });
 
                 server.server.on('close', () => {

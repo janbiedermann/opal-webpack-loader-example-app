@@ -1,5 +1,5 @@
 const path = require('path');
-const OpalWebpackResolverPlugin = require('opal-webpack-resolver-plugin');
+const OwlResolver = require('opal-webpack-loader/resolver');
 
 module.exports = {
     parallelism: 8,
@@ -22,7 +22,7 @@ module.exports = {
     },
     resolve: {
         plugins: [
-            new OpalWebpackResolverPlugin('resolve', 'resolved')
+            new OwlResolver('resolve', 'resolved')
         ]
     },
     module: {
