@@ -23,7 +23,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "bundle exec opal-webpack-compile-server kill; bundle exec opal-webpack-compile-server && webpack --watch; bundle exec opal-webpack-compile-server kill",
     "start": "bundle exec opal-webpack-compile-server kill; bundle exec opal-webpack-compile-server && bundle exec webpack-serve --config ./config/webpack/development.js; bundle exec opal-webpack-compile-server kill",
     "build": "bundle exec opal-webpack-compile-server kill; bundle exec opal-webpack-compile-server && webpack --config=config/webpack/production.js; bundle exec opal-webpack-compile-server kill",
     "cordova": "bundle exec opal-webpack-compile-server kill; bundle exec opal-webpack-compile-server && webpack --config=config/webpack/cordova.js; bundle exec opal-webpack-compile-server kill"
@@ -36,7 +35,6 @@
     "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
-    "json-stringify-safe": "^5.0.1",
     "node-sass": "^4.9.0",
     "opal-webpack-loader": "0.3.7",
     "sass-loader": "^7.0.3",

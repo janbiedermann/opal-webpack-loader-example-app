@@ -1,7 +1,7 @@
 const path = require('path');
 const OwlResolver = require('opal-webpack-loader/resolver');
 const CompressionPlugin = require("compression-webpack-plugin"); // for gzipping the packs
-const  ManifestPlugin = require('webpack-manifest-plugin');  // for generating the manifest
+const ManifestPlugin = require('webpack-manifest-plugin');  // for generating the manifest
 
 module.exports = {
     parallelism: 8,
